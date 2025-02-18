@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+void calcularRaices(double a, double b, double c){
+    double discriminante=b*b-4*a*c;
+    if(discriminante<0){
+        printf("No hay raíces reales.\n");
+    }else {
+        double raiz1=(-b+sqrt(discriminante))/(2*a);
+        double raiz2=(-b-sqrt(discriminante))/(2*a);
+        printf("Las raíces son %.2f y %.2f\n", raiz1, raiz2);
+    }
+}
+
+int main(){
+    calcularRaices(1.0, -3.0, 2.0);
+    return 0;
+}
