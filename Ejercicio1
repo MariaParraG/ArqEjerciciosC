@@ -1,0 +1,10 @@
+#include <stdio.h>
+double doble(double x){
+    return 2*x;
+}
+
+int main(){
+    double valor=5.0;
+    printf("El doble de %.2f es %.2f\n", valor, doble(valor));
+    return 0;
+}
